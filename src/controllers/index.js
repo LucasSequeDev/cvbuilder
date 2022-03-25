@@ -1,3 +1,5 @@
+const ORM = require('../functions/orm')
+
 const controller ={
     index:(req, res) => {
         res.render('index', { msg: "Lienzo en blanco"})
