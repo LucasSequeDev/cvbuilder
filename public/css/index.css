@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.page-home {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+/* header */
+.header-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-avatar {
+  width: 50vw;
+  height: fit-content;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.header-person {
+  width: 100%;
+  text-align: center;
+}
+
+.header-description {
+  padding: 10px 0;
+}
+
+/* main */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* aside */
+.aside-container {
+  background-color: #b5daff;
+  padding: 0 10px;
+}
+
+.aside-section,
+.aside-subsection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.aside-subsection {
+  padding: 10px;
+}
+
+.aside-title,
+.main-title {
+  font-weight: 500;
+  font-size: 1.4rem;
+  width: 100%;
+  border-bottom: solid 1px #152321;
+}
+
+.aside-title {
+  display: flex;
+}
+
+.aside-subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+}
+
+.aside-icon {
+  margin-right: 10px;
+}
+
+ul.aside-section > li {
+  padding: 5px 0;
+  list-style-type: none;
+}
+
+ul.aside-subsection > li {
+  padding: 5px 0;
+  list-style-type: none;
+}
+
+.aside-item {
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aside-badge {
+  margin-right: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.badge-advanced {
+  background-color: rgb(9, 31, 80);
+  color: #b5daff;
+}
+
+.badge-middle {
+  background-color: rgb(54, 85, 150);
+  color: #b5daff;
+}
+
+.badge-initial {
+  background-color: rgb(104, 133, 196);
+  color: #b5daff;
+}
+
+.main-section {
+  padding: 10px;
+}
+
+.main-title {
+  margin-top: 30px;
+}
+
+.card-job {
+  margin: 10px 0;
+}
+
+.card-job h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.card-job-date {
+  margin-bottom: 6px;
+  color: grey;
+}
+.card-job-position {
+  text-decoration: underline;
+}
+
+.card-job-description {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.page-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-form {
+  width: 80%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vw;
+  max-height: 300px;
+  background-color: #b5daff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group-col {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 80%;
+  padding: 2px 10px;
+  border-radius: 10px;
+  border: solid 1px #152321;
+  font-weight: 500;
+}
+.settings-form button,
+.login-form button {
+  width: 80%;
+  padding: 5px;
+  border-radius: 10px;
+  border: solid 1px #152321;
+  font-weight: 500;
+  background-color: #152321;
+  color: #b5daff;
+  margin: 10px 0;
+}
+
+@media (min-width: 450px) {
+  /* header */
+  .header-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .header-person {
+    padding: 0 10px;
+  }
+
+  .header-avatar {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .header-description {
+    border-bottom: none;
+  }
+
+  /* main*/
+  .main-container {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+  }
+
+  .form-group input {
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  /* header */
+  .header-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main-section {
+    padding: 10px 40px;
+  }
+
+  .header-avatar {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  /* main*/
+  .main-container {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+  }
+}
